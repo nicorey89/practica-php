@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nombre:<input type="text" id="nombre" placeholder="Nombre"><br>
+    Apellido:<input type="text" id="apellido" placeholder="Apellido"><br>
+    Fecha de Nacimiento:<input type="date" id="fechaDeNacimiento" placeholder="fecha de Nacimiento"><br>
+    Genero:<select id="genero" type="text">
+        <option value="masculino">masculino</option>
+        <option value="femenino">femenino</option>
+    </select><br>
+    <button type="button" id="btn-guardar" onclick="guardar()">Guardar</button>
+    <button type="button" id="btn-actualizar" onclick="actualizar()" style="display: none">Actualizar</button>
+    <button type="button" onclick="vaciarFormulario()">Vaciar</button>
+    <hr>
+    <table id="tabla-usuarios">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>fecha de Nacimiento</th>
+                <th>Genero</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/controlador.js"></script>
+    
+</body>
+</html>
